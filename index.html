@@ -3,271 +3,376 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thishalini's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Thishalini's Portfolio - Aspiring Software & Data Professional with expertise in Python, Django, SQL, and Web Development">
+  <meta name="keywords" content="portfolio, software developer, data analyst, Python, Django, web development">
+  <meta name="author" content="Kamireddy Thishalini">
+  
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Thishalini's Portfolio">
+  <meta property="og:description" content="Aspiring Software & Data Professional">
+  <meta property="og:type" content="website">
+  
+  <title>Thishalini's Portfolio | Software & Data Professional</title>
+  
+  <!-- Preconnect to external resources for better performance -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
   <!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav class="navbar">
-    <div class="logo">My Portfolio</div>
+  <!-- Navigation Bar with improved accessibility -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="logo">
+      <a href="#home" aria-label="Home">My Portfolio</a>
+    </div>
 
-    <!-- Hamburger icon -->
-    <div class="menu-icon" id="menuIcon">&#9776;</div>
+    <!-- Hamburger Menu Icon for Mobile -->
+    <button class="menu-icon" id="menuIcon" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
 
-    <!-- Nav links -->
-    <ul class="nav" id="navLinks">
-      <li class="list"><a class="list" href="#home" onclick="showSection('home')">Home</a></li>
-      <li class="list"><a class="list" href="#education" onclick="showSection('education')">education</a></li>
-      <li class="list"><a class="list" href="#skills" onclick="showSection('skills')">skills</a></li>
-      <li class="list"><a class="list" href="#projects" onclick="showSection('projects')">projects</a></li>
-      <li class="list"><a class="list" href="#internship" onclick="showSection('internship')">internship</a></li>
-      <li class="list"><a class="list" href="#contact">contact</a></li>
+    <!-- Navigation Links -->
+    <ul class="nav" id="navLinks" role="menubar">
+      <li role="none"><a role="menuitem" href="#home">Home</a></li>
+      <li role="none"><a role="menuitem" href="#education">Education</a></li>
+      <li role="none"><a role="menuitem" href="#skills">Skills</a></li>
+      <li role="none"><a role="menuitem" href="#projects">Projects</a></li>
+      <li role="none"><a role="menuitem" href="#internship">Internship</a></li>
+      <li role="none"><a role="menuitem" href="#publications">Publications</a></li>
+      <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
     </ul>
   </nav>
 
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="hero-content">
+      <!-- Left: About Text -->
+      <div class="about">
+        <h1 class="fade-in-left delay-1">
+          Hi, I'm <span class="highlight">Kamireddy Thishalini</span>
+        </h1>
+        <h2 class="fade-in-left delay-2">Aspiring Software & Data Professional</h2>
 
-<section id="home" class="home-section">
-  <div class="hero-content">
-    <!-- Left: Text -->
-    <div class="about">
-      <h1 class="fade-in-left delay-1">Hi, I'm <span class="highlight">Thishalini Reddy</span></h1>
-      <h2 class="fade-in-left delay-2">Aspiring Software Developer</h2>
-      <p class="fade-in-left delay-3">
-        I am a Biomedical Engineering student transitioning into a career in software development.
-        Currently pursuing my degree at <strong>xyzy</strong> with a CGPA of <strong>8.12</strong> (till 6th semester).
-        I have skills in Python, Django, HTML, CSS, JavaScript, and MySQL, and I enjoy building
-        efficient and user-friendly applications.
+        <p class="fade-in-left delay-3">
+          I am a detail-oriented Biomedical Engineering undergraduate with strong hands-on experience in
+          Python, SQL, Excel, and web application development. Currently pursuing my degree at
+          <strong>Vel Tech University</strong> with a CGPA of <strong>8.1</strong>.
+        </p>
+
+        <p class="fade-in-left delay-4">
+          I have experience in data cleaning, exploratory analysis, dashboard creation, and building
+          database-driven applications using Django, MySQL, HTML, CSS, and JavaScript. I enjoy working on
+          real-world problems and developing efficient, reliable, and user-focused software solutions.
+        </p>
+
+        <p class="fade-in-left delay-5">
+          My goal is to grow as a software and data professional by contributing to impactful projects
+          that combine analytical thinking with practical development skills.
+        </p>
+
+        <a href="./thishalini_resume_pd.pdf" target="_blank" rel="noopener noreferrer" class="resume-btn fade-in-left delay-6" aria-label="Download Resume PDF">
+          <i class="fas fa-download" aria-hidden="true"></i> Download Resume
+        </a>
+      </div>
+
+      <!-- Right: Profile Photo -->
+      <div class="hero-photo fade-in-right delay-2">
+        <img src="./thishalini_profile.png" alt="Kamireddy Thishalini - Portfolio Photo" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education-section">
+    <h2>Education</h2>
+
+    <div class="education-timeline">
+      <article class="education-item">
+        <div class="education-year" aria-label="Years 2022 to 2026">2022 - 2026</div>
+        <div class="education-content">
+          <h3>Bachelor of Technology in Biomedical Engineering</h3>
+          <p><strong>Vel Tech University</strong> | CGPA: 8.12/10</p>
+        </div>
+      </article>
+
+      <article class="education-item">
+        <div class="education-year" aria-label="Years 2019 to 2021">2019 - 2021</div>
+        <div class="education-content">
+          <h3>Intermediate (PCB)</h3>
+          <p><strong>Sri Krishna Chaitanya Junior College</strong> | CGPA: 7.51/10</p>
+        </div>
+      </article>
+
+      <article class="education-item">
+        <div class="education-year" aria-label="Years 2018 to 2019">2018 - 2019</div>
+        <div class="education-content">
+          <h3>Secondary School</h3>
+          <p><strong>Sri Chaitanya E.M School</strong> | GPA: 9.8/10</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    
+    <div class="skills-container">
+      <div class="skill-box">
+        <i class="fab fa-python fa-3x" style="color:#FFD43B;" aria-hidden="true"></i>
+        <h3>Python</h3>
+      </div>
+
+      <div class="skill-box">
+        <i class="fab fa-python fa-3x" style="color:#092E20;" aria-hidden="true"></i>
+        <h3>Django</h3>
+      </div>
+
+      <div class="skill-box">
+        <i class="fab fa-html5 fa-3x" style="color:#E34F26;" aria-hidden="true"></i>
+        <h3>HTML5</h3>
+      </div>
+
+      <div class="skill-box">
+        <i class="fab fa-css3-alt fa-3x" style="color:#1572B6;" aria-hidden="true"></i>
+        <h3>CSS3</h3>
+      </div>
+
+      <div class="skill-box">
+        <i class="fab fa-js-square fa-3x" style="color:#F7DF1E;" aria-hidden="true"></i>
+        <h3>JavaScript</h3>
+      </div>
+
+      <div class="skill-box">
+        <i class="fas fa-database fa-3x" style="color:#4479A1;" aria-hidden="true"></i>
+        <h3>MySQL</h3>
+      </div>
+
+      <div class="skill-box">
+        <i class="fas fa-file-excel fa-3x" style="color:#217346;" aria-hidden="true"></i>
+        <h3>Microsoft Excel</h3>
+      </div>
+
+      <div class="skill-box">
+        <i class="fab fa-github fa-3x" style="color:#181717;" aria-hidden="true"></i>
+        <h3>GitHub</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+
+    <!-- Project 1: Pizza Sales Analysis -->
+    <article class="project">
+      <div class="project-content">
+        <h3>Pizza Sales Analysis</h3>
+        <p>
+          Analyzed pizza sales data from MySQL using complex joins and aggregations to evaluate revenue,
+          demand patterns, and top-selling items. Built an interactive Excel dashboard to visualize peak hours,
+          category performance, and daily sales trends.
+        </p>
+        <ul>
+          <li><strong>Technologies:</strong> MySQL, Microsoft Excel</li>
+          <li>Performed data cleaning and validation for accurate reporting</li>
+          <li>Created dashboards for business insights</li>
+        </ul>
+
+        <a href="https://github.com/thishalinireddy" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Pizza Sales Analysis project on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i> View on GitHub
+        </a>
+      </div>
+    </article>
+
+    <!-- Project 2: Customer Purchase Behavior Analysis -->
+    <article class="project">
+      <div class="project-content">
+        <h3>Customer Purchase Behavior Analysis</h3>
+        <p>
+          Analyzed 10,000+ transaction records using Python (Pandas) and MySQL to identify customer segments
+          and purchasing trends. Improved data quality through missing value treatment and duplicate removal,
+          and developed Excel dashboards for seasonal pattern analysis.
+        </p>
+        <ul>
+          <li><strong>Technologies:</strong> Python (Pandas, NumPy), MySQL, Microsoft Excel</li>
+          <li>Processed and cleaned large-scale transactional datasets</li>
+          <li>Visualized trends and top-performing products</li>
+        </ul>
+
+        <a href="https://github.com/thishalinireddy" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Customer Purchase Behavior Analysis project on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i> View on GitHub
+        </a>
+      </div>
+    </article>
+
+    <!-- Project 3: Human Activity Recognition -->
+    <article class="project">
+      <div class="project-content">
+        <h3>Human Activity Recognition – Sleep Fall Detection</h3>
+        <p>
+          Designed a CNN–BiLSTM deep learning model using accelerometer and gyroscope data to classify
+          nine human postures and detect fall events in real time.
+        </p>
+        <ul>
+          <li><strong>Technologies:</strong> Python, NumPy, Matplotlib</li>
+          <li>Engineered features and optimized the training pipeline</li>
+          <li>Achieved 96% classification accuracy</li>
+        </ul>
+
+        <a href="https://github.com/thishalinireddy" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Human Activity Recognition project on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i> View on GitHub
+        </a>
+      </div>
+    </article>
+
+    <!-- Project 4: To-Do Web Application -->
+    <article class="project">
+      <div class="project-content">
+        <h3>To-Do Web Application (Django)</h3>
+        <p>
+          Developed a task management web application using Python and Django with secure user authentication,
+          CRUD operations, and task status tracking. Designed responsive interfaces and integrated MySQL as
+          the backend database.
+        </p>
+        <ul>
+          <li><strong>Technologies:</strong> Python, Django, HTML, CSS, JavaScript, MySQL</li>
+          <li>Implemented user authentication and task filtering</li>
+          <li>Built responsive UI for efficient task management</li>
+        </ul>
+
+        <a href="https://github.com/thishalinireddy" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View To-Do Web Application project on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i> View on GitHub
+        </a>
+      </div>
+    </article>
+  </section>
+
+  <!-- Internship Section -->
+  <section id="internship" class="internship-section">
+    <h2>Internships & Training</h2>
+
+    <div class="timeline">
+      <!-- Item 1 -->
+      <article class="timeline-item">
+        <div class="timeline-date"><strong>July 2024</strong></div>
+        <div class="timeline-content">
+          <h3>Data Analysis – Deloitte Australia (Forage)</h3>
+          <ul>
+            <li>Analyzed factory telemetry using Excel & Tableau</li>
+            <li>Built dashboards for machine downtime and gender pay equality</li>
+            <li>Derived actionable HR and operational insights</li>
+          </ul>
+          <a href="./dataanalysis_completion_certificate_deloitte.pdf" target="_blank" rel="noopener noreferrer" class="cert-btn" aria-label="View Deloitte certificate">
+            <i class="fas fa-certificate" aria-hidden="true"></i> View Certificate
+          </a>
+        </div>
+      </article>
+
+      <!-- Item 2 -->
+      <article class="timeline-item">
+        <div class="timeline-date"><strong>December 2024</strong></div>
+        <div class="timeline-content">
+          <h3>Python Full Stack Development – FIIT Institute, Chennai</h3>
+          <ul>
+            <li>Comprehensive training in HTML, CSS, JavaScript, Python, Django, and MySQL</li>
+            <li>Hands-on experience through real-world projects and industry workflows</li>
+            <li>Built and deployed responsive web applications with integrated back-end systems</li>
+          </ul>
+          <a href="./KAMIREDDY_THISHALINI_PFD.pdf" target="_blank" rel="noopener noreferrer" class="cert-btn" aria-label="View FIIT Institute certificate">
+            <i class="fas fa-certificate" aria-hidden="true"></i> View Certificate
+          </a>
+        </div>
+      </article>
+
+      <!-- Item 3 -->
+      <article class="timeline-item">
+        <div class="timeline-date"><strong>June 2024</strong></div>
+        <div class="timeline-content">
+          <h3>Implant Training – Bloom Life Multispeciality Hospital, Chennai</h3>
+          <ul>
+            <li>ICU & OT equipment training</li>
+            <li>Neonatal childcare instruments and labor ward experience</li>
+            <li>Radiological equipment exposure</li>
+          </ul>
+          <a href="./bloomlife_implant_certificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-btn" aria-label="View Bloom Life Hospital certificate">
+            <i class="fas fa-certificate" aria-hidden="true"></i> View Certificate
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications" class="publications-section">
+    <h2>Publications</h2>
+
+    <article class="publication-item">
+      <h3>IoT-Enabled Precision Agriculture Using ESP32 and Low-Cost Sensors</h3>
+
+      <p class="publication-author">
+        <strong>Kamireddy Thishalini</strong> — Proceedings Paper, International Conference (ECSA-12, 2025)
       </p>
-      <p class="fade-in-left delay-4">
-        My goal is to combine problem-solving skills with creativity to develop impactful
-        software solutions that make a difference.
+
+      <p class="publication-description">
+        Published a proceedings paper on an IoT-based precision agriculture system using ESP32 and
+        low-cost sensors for real-time environmental monitoring and efficient farm management.
       </p>
-      <a href="./thishalini_resume_pd.pdf" target="_blank" class="resume-btn fade-in-left delay-5">Download Resume</a>
-    </div>
 
-    <!-- Right: Photo -->
-    <div class="hero-photo fade-in-right delay-2">
-      <img src="./thishalini_passport_photo-removebg-preview.png" alt="Thishalini Reddy" />
-    </div>
-  </div>
-</section>
-
-
-
-<section id="education" class="education-section">
-  <h2>Education</h2>
-
-  <div class="education-item">
-    <div class="education-year">2022 - 2026</div>
-    <div class="education-content">
-      <h3>Bachelor of Technology Biomedical Engineering</h3>
-      <p><strong>Vel Tech University University</strong> | CGPA: 8.12/10</p>
-    </div>
-  </div>
-
-  <div class="education-item">
-    <div class="education-year">2019 - 2021</div>
-    <div class="education-content">
-      <h3>Intermediate (PCB)</h3>
-      <p><strong>Sri Krishna chaitanya Junior College</strong> | CGPA: 7.51/10</p>
-    </div>
-  </div>
-
-  <div class="education-item">
-    <div class="education-year">2018 - 2019</div>
-    <div class="education-content">
-      <h3>Secondary School</h3>
-      <p><strong>Sri ChaitanyaE.M School</strong> | GPA: 9.8/10</p>
-    </div>
-  </div>
-
-</section>
-<section id="skills" class="skills-section">
-  <h2>Skills</h2>
-  
-  <div class="skills-container">
-    <div class="skill-box">
-      <i class="fab fa-python fa-3x"style="color:#FFD43B;"></i>
-      <h6>Python</h6>
-    </div>
-    <div class="skill-box">
-      <i class="fab fa-python fa-3x" style="color:#092E20"></i>
-      <h6>Django</h6>
-    </div>
-    <div class="skill-box">
-      <i class="fab fa-html5 fa-3x" style="color:#E34F26;"></i>
-      <h6>HTML5</h6>
-    </div>
-    <div class="skill-box">
-      <i class="fab fa-css3-alt fa-3x"style="color:#1572B6;"></i>
-      <h6>CSS3</h6>
-    </div>
-    <div class="skill-box">
-      <i class="fab fa-js-square fa-3x"style="color:#F7DF1E;"></i>
-      <h6>JavaScript</h6>
-    </div>
-    <div class="skill-box">
-      <i class="fas fa-database fa-3x"style="color:#4479A1;"></i>
-      <h6>MySQL</h6>
-    </div>
-    <div class="skill-box">
-      <i class="fab fa-bootstrap fa-3x"style="color:#7952B3;"></i>
-      <h6>Bootstrap</h6>
-    </div>
-    <div class="skill-box">
-      <i class="fab fa-github fa-3x"style="color:#181717;"></i>
-      <h6>GitHub</h6>
-    </div>
-  </div>
-</section>
-
-
-
-<section id="projects" class="projects-section">
-  <h2>Projects</h2>
-
-  <!-- Project 1 -->
-  <div class="project" >
-    <div class="project-media">
-      <!-- ⚠️ replace VIDEO_ID_1 -->
-      <iframe
-        src="https://www.youtube.com/embed/VIDEO_ID_1"
-        title="Project 1 Demo"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
-
-    <div class="project-content">
-      <h2>Comparative Edge Detection & Artistic Rendering (OpenCV)</h2>
-      <p>Implemented Sobel, Prewitt and Canny algorithms for edge detection and applied grayscale + median blur
-        to generate sketch-style artistic images.</p>
       <ul>
-        <li>Tools: Python, OpenCV, NumPy</li>
-        <li>Real-time comparison interface</li>
-        <li>Processing time ≤ 0.4s per image</li>
+        <li>Designed sensor-based data acquisition using ESP32</li>
+        <li>Focused on low-cost, scalable precision farming solutions</li>
+        <li>Presented at an international conference (ECSA-12, 2025)</li>
       </ul>
-      <a href="https://github.com/username/project1" target="_blank">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-    </div>
-  </div>
+    </article>
+  </section>
 
-  <!-- Project 2 -->
-  <div class="project">
-    <div class="project-content full-width">
-      <h2>Sleep Fall Detection using CNN-BiLSTM</h2>
-      <p>Developed a CNN-BiLSTM deep-learning model to classify 9 human body positions using accelerometer
-        and gyroscope sensor data and generate real-time fall alerts.</p>
-      <ul>
-        <li>Tools: Python, TensorFlow, Matplotlib</li>
-        <li>Accuracy: 96%</li>
-      </ul>
+  <!-- Contact Section -->
+  <section id="contact">
+    <footer class="footer">
+      <h2>Contact</h2>
 
-      <div class="video-bottom-right">
-        <!-- ⚠️ replace VIDEO_ID -->
-        <iframe
-          src="https://www.youtube.com/embed/VIDEO_ID"
-          title="Project 2 Demo"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+      <div class="footer-icons">
+        <!-- Email -->
+        <a href="mailto:thishalinireddy@gmail.com" aria-label="Email Thishalini">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+        </a>
+        
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/thishalini-reddy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+        
+        <!-- GitHub -->
+        <a href="https://github.com/thishalinireddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+          <i class="fab fa-github" aria-hidden="true"></i>
+        </a>
+        
+        <!-- Location -->
+        <a href="https://maps.app.goo.gl/8xKBndGFFMNvez5M6" target="_blank" rel="noopener noreferrer" aria-label="View location on Google Maps">
+          <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+        </a>
       </div>
 
-      <a href="https://github.com/username/project2" target="_blank">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-    </div>
-  </div>
-</section>
-
-
-
-<section id="internship" class="internship-section">
-  <h2>Internships & Training</h2>
-
-  <div class="timeline">
-
-    <!-- Item 1 -->
-    <div class="timeline-item">
-      <div class="timeline-date"><b>July 2025</b></div>
-      <div class="timeline-content">
-        <h3>Data Analysis – Deloitte Australia (Forage)</h3>
-        <p>• Analyzed factory telemetry using Excel & Tableau<br>
-           • Built dashboards for machine downtime and gender pay equality<br>
-           • Derived actionable HR and operational insights</p>
-        <a href="./dataanalysis_completion_certificate_deloitte.pdf" target="_blank" class="cert-btn">View Certificate</a>
+      <div class="contact-phone">
+        <a href="tel:+919515037508" aria-label="Call Thishalini">
+          <i class="fas fa-phone" aria-hidden="true"></i> +91 9515037508
+        </a>
       </div>
-    </div>
 
-    <!-- Item 2 -->
-    <div class="timeline-item">
-      <div class="timeline-date"><b>July 2025</b></div>
-      <div class="timeline-content">
-        <h3>Cyber Security – Deloitte (Forage)</h3>
-        <p>• Inspected web logs to detect threats<br>
-           • Documented potential cyber breaches (without VPN access)<br>
-           • Applied SIEM and HTTP forensic skills in real-world scenarios</p>
-        <a href="./cyber_completion_certificate_deloitte.pdf" target="_blank" class="cert-btn">View Certificate</a>
-      </div>
-    </div>
+      <p class="copyright">&copy; 2025 Thishalini. All rights reserved.</p>
+    </footer>
+  </section>
 
-    <!-- Item 3 -->
-    <div class="timeline-item">
-      <div class="timeline-date"><b>June 2024</b></div>
-      <div class="timeline-content">
-        <h3>Implant Training – Bloom Life Multispeciality Hospital, Chennai</h3>
-        <p>• ICU & OT equipment<br>
-           • Neonatal childcare instruments and labor ward<br>
-           • Radiological equipment exposure</p>
-        <a href="./bloomlife_implant_certificate.pdf" target="_blank" class="cert-btn">View Certificate</a>
-      </div>
-    </div>
-
-        <!-- Item 4 -->
-    <div class="timeline-item">
-  <div class="timeline-date"><b>May 2024 – Dec 2024</b></div>
-  <div class="timeline-content">
-    <h3>Python Full Stack Development – ABC Institute, Chennai</h3>
-    <p>• Comprehensive training in HTML, CSS, JavaScript, Python, Django, and MySQL<br>
-       • Hands-on experience through real-world projects and industry workflows<br>
-       • Built and deployed responsive web applications with integrated back-end systems</p>
-    <a href="./KAMIREDDY_THISHALINI_PFD.pdf" target="_blank" class="cert-btn">View Certificate</a>
-  </div>
-</div>
-
-  </div>
-</section>
-
-
-
-<section id="contact">
-  <footer class="footer">
-    <h3>Contact</h3>
-
-    <div class="footer-icons">
-      <!-- Email -->
-    <a href="mailto:thishalinireddy97@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
-    <a href="https://www.linkedin.com/in/www.linkedin.com/in/thishalini-reddy" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/thishalinireddy" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-      <!-- Location (Google Maps) -->
-      <a href="https://maps.app.goo.gl/8xKBndGFFMNvez5M6" target="_blank">
-        <i class="fas fa-map-marker-alt"></i>
-      </a>
-    </div>
-    <div class="call">
-      <!-- Phone -->
-      <a href="tel:+919515037508"><i class="fas fa-phone" style="color: green;"></i>+919515037508</a>
-    </div>
-     <p class="mb-0" style="margin-top: 2px; font-family: 'Times New Roman', Times, serif">&copy; 2025 Thishalini. All rights reserved.</p>
-  </footer>
-</section>
-
-
-
-  <script src="script.js"></script>
+  <!-- JavaScript -->
+  <script src="main.js"></script>
 </body>
 </html>
+
